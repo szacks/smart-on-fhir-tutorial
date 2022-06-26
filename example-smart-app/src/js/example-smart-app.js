@@ -87,7 +87,7 @@
   }
 
   function getBloodPressureValue(BPObservations, typeOfPressure) {
-    var formattedBPObservations = [];
+    /*var formattedBPObservations = [];
     BPObservations.forEach(function(observation){
       if(typeof observation != 'undefined' && typeof observation.component != 'undefined'){
         var BP = observation.component.find(function(component){
@@ -102,7 +102,8 @@
       }
     });
 
-    return getQuantityValueAndUnit(formattedBPObservations[0]);
+    return getQuantityValueAndUnit(formattedBPObservations[0]);*/
+    return 1;
   }
 
   function getQuantityValueAndUnit(ob) {
