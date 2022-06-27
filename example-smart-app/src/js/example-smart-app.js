@@ -119,9 +119,9 @@
     }
   }
 
-  window.drawVisualization = function(p) {
+  /*window.drawVisualization = function(p) {
     $('#holder').show();
-    /*$('#loading').hide();
+    $('#loading').hide();
     $('#fname').html(p.fname);
     $('#lname').html(p.lname);
     $('#gender').html(p.gender);
@@ -130,7 +130,7 @@
     $('#systolicbp').html(p.systolicbp);
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
-    $('#hdl').html(p.hdl);*/
-  };
+    $('#hdl').html(p.hdl);
+  };*/
 
 })(window);
