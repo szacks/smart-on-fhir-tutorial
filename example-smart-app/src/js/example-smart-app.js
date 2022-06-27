@@ -87,10 +87,12 @@
   }
 
   function getBloodPressureValue(BPObservations, typeOfPressure) {
-    /*var formattedBPObservations = [];
+    var formattedBPObservations = [];
     BPObservations.forEach(function(observation){
-      if(typeof observation != 'undefined' && typeof observation.component != 'undefined'){
         var BP = observation.component.find(function(component){
+          if(component == null){
+            return false;
+          }
           return component.code.coding.find(function(coding) {
             return coding.code == typeOfPressure;
           });
@@ -99,11 +101,9 @@
           observation.valueQuantity = BP.valueQuantity;
           formattedBPObservations.push(observation);
         }
-      }
     });
 
-    return getQuantityValueAndUnit(formattedBPObservations[0]);*/
-    return 1;
+    return getQuantityValueAndUnit(formattedBPObservations[0]);
   }
 
   function getQuantityValueAndUnit(ob) {
