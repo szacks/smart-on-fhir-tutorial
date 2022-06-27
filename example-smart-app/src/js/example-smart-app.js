@@ -90,6 +90,9 @@
     var formattedBPObservations = [];
     BPObservations.forEach(function(observation){
       var BP = observation.component.find(function(component){
+        if(component == null){
+          return false;
+        }
         return component.code.coding.find(function(coding) {
           return coding.code == typeOfPressure;
         });
