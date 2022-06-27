@@ -1,6 +1,6 @@
 (function(window){
   window.extractData = function() {
-    var ret = $.Deferred();
+    /*var ret = $.Deferred();
 
     function onError() {
       console.log('Loading error', arguments);
@@ -68,7 +68,8 @@
     }
 
     FHIR.oauth2.ready(onReady, onError);
-    return ret.promise();
+    return ret.promise(); */
+    return null;
 
   };
 
@@ -87,7 +88,7 @@
   }
 
   function getBloodPressureValue(BPObservations, typeOfPressure) {
-    var formattedBPObservations = [];
+    /*var formattedBPObservations = [];
     BPObservations.forEach(function(observation){
         var BP = observation.component.find(function(component){
           if(component == null){
@@ -103,7 +104,8 @@
         }
     });
 
-    return getQuantityValueAndUnit(formattedBPObservations[0]);
+    return getQuantityValueAndUnit(formattedBPObservations[0]);*/
+    return null;
   }
 
   function getQuantityValueAndUnit(ob) {
