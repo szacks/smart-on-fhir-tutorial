@@ -119,7 +119,7 @@
     }
   }
 
-  /*window.drawVisualization = function(p) {
+  window.drawVisualization = function(p) {
     $('#holder').show();
     $('#loading').hide();
     $('#fname').html(p.fname);
@@ -131,6 +131,6 @@
     $('#diastolicbp').html(p.diastolicbp);
     $('#ldl').html(p.ldl);
     $('#hdl').html(p.hdl);
-  };*/
+  };
 
 })(window);
