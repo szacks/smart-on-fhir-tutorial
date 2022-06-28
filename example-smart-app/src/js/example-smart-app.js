@@ -19,10 +19,11 @@
           var lname = '';
 
           if (typeof patient.name[0] !== 'undefined') {
-            fname = patient.name[0].given[0].join(' ');
+            //fname = patient.name[0].given[0].join(' ');
             //lname = patient.name[0].family.join(' ');
             //fname = "test first name";
             lname = "test";
+            fname = patient.gender;
           }
 
           var p = defaultPatient();
